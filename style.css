@@ -7,28 +7,63 @@ body {
   margin-top: 100px;
 }
 
-
 #hero {
   height: 60vh;
-  /* add Space_Transportation as background image */
+  background-image: url(./Space_Transportation.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
 }
 
 #hero-img {
   /* add position */
   /* and if you want transition effects */
+  width: 20%;
+  position: absolute;
+  right: 50px;
+  bottom: -50px;
+  transition: 1s;
 }
 
 #hero:hover #hero-img {
   /* animate size position and rotation */
+  transform: scale(0.3) translate(-40px, -150px) rotate(3turn);
+  opacity: 0;
 }
 
-/* comment above and uncomment bellow: why this doesn't work well?? */
-/* #hero-img:hover{
-    transform: scale(.3) translate(-50px, -250px) rotate(3turn);
-} */
+html {
+  font-size: calc(10px+0.5vw);
+  scroll-behavior: smooth;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
 
-main {
-    width: 90vw;
-    margin: auto;
-    background-color: thistle;
-  }
+nav {
+  background-color: hsl(240, 40%, 48%);
+  display: flex;
+  gap: 50px;
+  width: 100%;
+  text-align: center;
+  position: sticky;
+  line-height: 60px;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+}
+
+a:hover {
+  color: hsl(4, 66%, 53%);
+}
+
+section h2 {
+  color: blue;
+}
+#main-container {
+  margin: 2%;
+  width: 90vw;
+  margin: auto;
+}
